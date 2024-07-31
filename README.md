@@ -49,3 +49,4 @@ The event_stream function, defined within the '/stream' route of the Flask web a
 The Kafka Producer setup and message delivery involve initializing the Producer with bootstrap servers configuration. Within the '/result' route, which handles user interactions and recommendation generation, the top 5 ASINs (Amazon Standard Identification Numbers) are obtained, transformed into a list format suitable for JSON serialization, and sent to the Kafka topic ('test') using the produce function. Upon successful delivery, the delivery_report function handles the delivery status of the message.
 
 
+
